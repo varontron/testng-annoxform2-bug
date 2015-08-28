@@ -1,6 +1,8 @@
 # testng-annoxform2-bug
 Example code for reproducing IAnnotationTransformer2 bug, [Issue #787](https://github.com/cbeust/testng/issues/787)
 
+The bug exists in v6.8.21 (jdk1.6) and v6.9.6 (jdk1.7)
+
 To reproduce the bug, just run `mvn test`
 
 The bug manifests as follows:
@@ -31,3 +33,7 @@ bTest: xform_bTestS4
 ```
 
 The first test in the class always reverts to the default annotation.
+
+The pom contains commented elements to switch between 6.8.21 using java1.6, and 6.9.6 using java1.7.
+
+
