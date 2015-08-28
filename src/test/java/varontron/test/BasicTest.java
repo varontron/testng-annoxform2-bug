@@ -26,11 +26,11 @@ public class BasicTest {
 // If you leave it commented, the "default" annotation for aTest will be used 
 // The first test in the class always loses the transformed annotation
   
-//  @Test (enabled=true,dataProvider="BasicProvider")
-//  @BasicAnno (list={})
-//  public void preTest(String param) {
-//    System.out.println("preTest:" + param);
-//  }
+  @Test (enabled=true,dataProvider="BasicProvider")
+  @BasicAnno (list={})
+  public void preTest(String param) {
+    System.out.println("preTest:" + param);
+  }
 
   
   @Test (enabled=true,dataProvider="BasicProvider")
