@@ -32,7 +32,7 @@ bTest: xform_bTestS3
 bTest: xform_bTestS4
 ```
 
-The first test in the class always reverts to the default annotation.
+The first test in the class always reverts to the default annotation, subsequent methods do not revert, and as expected, execute with the transformed annotation values.
 
 The pom contains commented elements to switch between 6.8.21 using java1.6, and 6.9.6 using java1.7.
 
